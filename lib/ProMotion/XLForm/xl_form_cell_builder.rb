@@ -52,9 +52,11 @@ module ProMotion
         min = properties[:min]
         max = properties[:max]
         step = properties[:step]
+        show_value = properties[:show_value]
         cell.cellConfigAtConfigure.setObject(min, forKey: "slider.minimumValue") if min
         cell.cellConfigAtConfigure.setObject(max, forKey: "slider.maximumValue") if max
         cell.cellConfigAtConfigure.setObject(step, forKey: "steps") if step
+        cell.cellConfigAtConfigure.setObject(show_value, forKey: "show_value") if show_value
       end
 
       # dates
